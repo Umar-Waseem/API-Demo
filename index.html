@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+
+    <!-- script with defer -->
+    <script defer src="index.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="index.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- make a colorful table to hold api data for this url: https://jsonplaceholder.typicode.com/posts-->
+    <!-- colorful nav bar -->
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navigationBar">
+        <a class="navbar-brand" href="#">Assignment 1</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <!-- switch button to toggle theme -->
+                <input type="checkbox" hidden="hidden" id="username">
+                <label class="switch" for="username"></label>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- make a fixed search bar with dark mode-->
+    <nav class="navbar navbar-light bg-dark" id="searchBar">
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </nav>
+    
+    
+
+    <table class="table table-striped table-dark">
+        <thead>
+            <tr>
+                <th scope="col">User ID</th>
+                <th scope="col">ID</th>
+                <th scope="col">Title</th>
+                <th scope="col">Body</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+        </tbody>
+    </table>
+
+</body>
+
+</html>
